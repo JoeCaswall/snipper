@@ -1,2 +1,4 @@
 __pycache__
-.snippervenv
+.snipper_venv
+/instance
+.env

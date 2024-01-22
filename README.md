@@ -1,3 +1,6 @@
+packaging needed:
+    pip install cryptography
+
 App to give the user code snippets for a few languages (can choose language based on URL)
 
 for app to work, run 
@@ -6,3 +9,4 @@ for app to work, run
 
 then run 
     $ flask run
+
