@@ -1,12 +1,18 @@
+
+# Intro
+
+App to give the user code snippets for a few languages (can choose by id or language in request body or URL endpoint). Snippets are encrypted when stored
+
+# Setup
+
 packaging needed:
-    pip install cryptography
 
-App to give the user code snippets for a few languages (can choose language based on URL)
+* pip install cryptography
 
-for app to work, run 
-    $ pip install flask
+## Running server
 
+`pip install flask`
 
-then run 
-    $ flask run
+then
 
+`flask run`
