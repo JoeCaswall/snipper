@@ -21,7 +21,7 @@ with open("snippets.json", "r") as file:
 def seed(dataset):
     for snippet in dataset:
         snippet["code"] = snippet["code"].encode()
-        print(snippet)
-        new_snippet = Snippet(code = fernet.encrypt(snippet["code"]), language=snippet["language"])
+        snippet["code"] = fernet.encrypt(snippet["code"])
+        new_snippet = Snippet(code=snippet["code"], language=snippet["language"].lower())
         db.session.add(new_snippet)
     db.session.commit()
