@@ -51,4 +51,3 @@ def show_snippets_by_language(language):
         snippet.code = fernet.decrypt(snippet.code).decode()
     correct_languages = Snippet.query.filter(Snippet.language == language.lower())
     return jsonify([snippet.to_json() for snippet in correct_languages])
-
