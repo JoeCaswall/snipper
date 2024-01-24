@@ -5,14 +5,12 @@ App to give the user code snippets for a few languages (can choose by id or lang
 
 # Setup
 
-packaging needed:
+## Packaging needed
 
-* pip install cryptography
+- `pip install cryptography`
+- `pip install bcrypt`
+- `pip install flask`
 
-## Running server
+## Running server in development
 
-`pip install flask`
-
-then
-
-`flask run`
+- `flask run`

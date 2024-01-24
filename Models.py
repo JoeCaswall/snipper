@@ -13,6 +13,12 @@ class User(db.Model):
     email: Mapped[str] = mapped_column(unique=True)
     password:Mapped[str]
 
+    def to_json(self):
+        return {
+            'id': self.id,
+            'email': self.email,
+        }
+
 class Snippet(db.Model):
     __tablename__ = "snippets"
     id:Mapped[int] = mapped_column(primary_key=True)
